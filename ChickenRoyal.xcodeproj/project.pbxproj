@@ -276,6 +276,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChickenRoyal/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BirdMove;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access to the gallery to select a photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +315,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChickenRoyal/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BirdMove;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access to the gallery to select a photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -16,7 +16,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		310181F62E9A6927001DF512 /* Exceptions for "ChickenRoyal" folder in "ChickenRoyal" target */ = {
+		7EC6FEFB2EAFBE33000C12B7 /* Exceptions for "ChickenRoyal" folder in "ChickenRoyal" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -29,7 +29,7 @@
 		310181DE2E9A67E6001DF512 /* ChickenRoyal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				310181F62E9A6927001DF512 /* Exceptions for "ChickenRoyal" folder in "ChickenRoyal" target */,
+				7EC6FEFB2EAFBE33000C12B7 /* Exceptions for "ChickenRoyal" folder in "ChickenRoyal" target */,
 			);
 			path = ChickenRoyal;
 			sourceTree = "<group>";

@@ -42,7 +42,7 @@ struct EditTransport: View {
                                     
                                     Spacer()
                                     
-                                    Text(model.date)
+                                    Text(model.date.formatted(.dateTime.year().month(.twoDigits).day()))
                                         .Titan(20,color: .black)
                                 }
                                 

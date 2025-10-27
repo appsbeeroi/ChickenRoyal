@@ -136,7 +136,7 @@ struct CardTransporting: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 17)
-                            Text(transport.date)
+                            Text(transport.date.formatted(.dateTime.year().month(.twoDigits).day()))
                                 .Titan(15,color: .black)
                         }
                     }

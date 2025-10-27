@@ -19,7 +19,7 @@ final class ViewModel: ObservableObject {
         }
     }
     
-    @Published var transport: [TransModel] = [] {
+    @Published var transport: [TransModel] = [TransModel(date: Date(), destination: "Destination", resason: .sale, modelBird: ModelBird(imageData: Data(), name: "Name", species: "Specis", age: 12, state: .active))] {
         didSet{
             UserDefaultsStorage.saveData(transport, forKey: "transport")
         }

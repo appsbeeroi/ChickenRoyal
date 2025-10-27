@@ -12,9 +12,13 @@ struct Background<Content: View>: View {
         }
     var body: some View {
         ZStack {
-            Image("mainBg")
-                .resizable()
-                .ignoresSafeArea()
+            GeometryReader { geo in
+                Image("bgLoading")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: geo.size.width, height: geo.size.height)
+            }
+            .ignoresSafeArea()
             
             content
         }

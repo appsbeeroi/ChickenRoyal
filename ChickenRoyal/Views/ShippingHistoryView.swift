@@ -142,7 +142,7 @@ extension ShippingHistoryView {
              return vm.transport.filter { item in
                  let lowercasedText = text.lowercased()
                  return item.modelBird.name.lowercased().contains(lowercasedText)
-                 || item.date.lowercased().contains(lowercasedText)
+                 || item.date.formatted(.dateTime.year().month(.twoDigits).day()).lowercased().contains(lowercasedText)
              }
          }
      }

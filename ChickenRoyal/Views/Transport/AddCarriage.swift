@@ -46,11 +46,8 @@ struct AddCarriage: View {
                 destination = existingTransport.destination
                 selectedReason = existingTransport.resason
                 
-                let formatter = DateFormatter()
-                formatter.dateFormat = "dd.MM.yyyy"
-                if let parsedDate = formatter.date(from: existingTransport.date) {
-                    selectedDate = parsedDate
-                }
+                selectedDate = existingTransport.date
+                
                 indexMenu = 1
             }
         }
@@ -159,7 +156,7 @@ extension AddCarriage {
         
         vm.transport[index] = TransModel(
             id: vm.transport[index].id,
-            date: selectedDate != nil ? formattedDate(selectedDate!) : "Date",
+            date: selectedDate ?? Date(),
             destination: destination,
             resason: selectedReason ?? .sale,
             modelBird: model
@@ -287,7 +284,7 @@ extension AddCarriage {
         guard let model = selectedCard else { return }
         vm.transport.append(
             TransModel(
-                date: selectedDate != nil ? formattedDate(selectedDate!) : "Date",
+                date: selectedDate ?? Date(),
                 destination: destination,
                 resason: selectedReason ?? .sale,
                 modelBird: model

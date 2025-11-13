@@ -1,5 +1,3 @@
-
-
 import SwiftUI
 
 struct EditTransport: View {
@@ -8,13 +6,13 @@ struct EditTransport: View {
     @Environment(\.dismiss) private var dismiss
     @State private var isShowAlert: Bool = false
     @State private var isShowSheet: Bool = false
+    
     let birdIndex: Int
     
     private var model: TransModel? {
         guard vm.transport.indices.contains(birdIndex) else { return nil }
         return vm.transport[birdIndex]
     }
-    
     
     var body: some View {
         Background {
@@ -24,7 +22,6 @@ struct EditTransport: View {
                 ScrollView {
                     VStack {
                         if let model = model {
-                            
                             Text("Bird")
                                 .Titan(20 ,color: .black)
                                 .hLeading()

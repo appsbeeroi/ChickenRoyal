@@ -31,9 +31,8 @@ struct AddCarriage: View {
                     } else {
                         finishAdd
                     }
-                    
-                   
                 }
+                .padding(20)
             }
             
             if showCalendar {
